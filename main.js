@@ -37,6 +37,10 @@ function init() {
     console.log("loop");
   }
   console.log("finish");
+  requestAnimationFrame(function animate() {
+    renderer.render(scene, camera);
+    requestAnimationFrame(animate);
+  });
 }
 
 init();
