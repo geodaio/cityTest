@@ -34,8 +34,9 @@ function init() {
     building.scale.y = Math.random() * building.scale.x * 8 + 8;
     building.scale.z = building.scale.x;
     scene.add(building); 
+    console.log("loop");
   }
-  
+  console.log("finish");
 }
 
 init();
